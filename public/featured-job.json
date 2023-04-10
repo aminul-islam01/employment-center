@@ -97,7 +97,7 @@
         "job_type": "Full Time",
         "description": "Ensure the safety and security of Umbrella Corporation's facilities, personnel, and assets.",
         "responsibilities": "Develop and implement security protocols to protect facilities, personnel, and assets, Monitor security systems and respond to any breaches or threats, Conduct investigations into security incidents and prepare reports",
-        "contact_info": {
+        "contact": {
             "phone": "+1 (555) 555-5555",
             "email": "info@umbrellacorp.com",
             "address": "456 Main Street, Raccoon City, AR 67890"
