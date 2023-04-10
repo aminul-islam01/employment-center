@@ -1,5 +1,5 @@
 .active {
-  color: brown;
+  color: rgb(237, 42, 42);
 }
 
 a {
@@ -11,4 +11,9 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #757575;
+}
+
+.category-item{
+  background-color: rgba(128, 128, 128, 0.089);
+  border: none;
 }

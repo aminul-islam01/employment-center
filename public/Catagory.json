@@ -4,28 +4,28 @@
       "title": "Software Developer",
       "category": "Technology",
       "quantity": 5,
-      "logo": "https://example.com/tech-company-logo.png"
+      "logo": "https://i.ibb.co/DtKcZgw/chip-1.png"
     },
     {
       "id": 2,
       "title": "Marketing Coordinator",
       "category": "Marketing",
       "quantity": 2,
-      "logo": "https://example.com/marketing-company-logo.png"
+      "logo": "https://i.ibb.co/LZcP4w6/social-media-1.png"
     },
     {
       "id": 3,
       "title": "Human Resources Manager",
       "category": "Business",
       "quantity": 1,
-      "logo": "https://example.com/business-company-logo.png"
+      "logo": "https://i.ibb.co/FzhTw4q/accounts-1.png"
     },
     {
       "id": 4,
       "title": "Graphic Designer",
       "category": "Creative",
       "quantity": 3,
-      "logo": "https://example.com/creative-company-logo.png"
+      "logo": "https://i.ibb.co/strL6Wn/business-1.png"
     }
   ]
   
