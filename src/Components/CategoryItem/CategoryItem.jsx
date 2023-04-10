@@ -2,8 +2,8 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const CategoryItem = ({category}) => {
-    console.log(category)
-    // const {category} = ca
+    // console.log(category)
+    
     return (
         <Card className='p-4 mx-3 rounded-2 category-item'>
             <div className='bg-secondary bg-opacity-25 w-25 py-2 rounded-2'>
