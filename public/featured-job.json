@@ -1,0 +1,126 @@
+[
+    {
+        "id": "1",
+        "company": "Acme Corporation",
+        "position": "Software Engineer",
+        "location": "San Francisco, CA",
+        "salary": "120000",
+        "job_location": "Remote",
+        "job_type": "Full Time",
+        "description": "Acme Corporation is seeking an experienced Software Engineer to join our team. The successful candidate will work on developing and maintaining our core software systems, ensuring that they are scalable, robust and performant. You will collaborate with cross-functional teams to design ",
+        "responsibilities": "Design, develop, and maintain software systems using Java and Python, Collaborate with cross-functional teams to design and implement new features, Perform code reviews and ensure code quality ",
+        "contact": {
+            "name": "John Smith",
+            "email": "john.smith@acmecorp.com",
+            "phone": "555-123-4567"
+        },
+        "requirements": [
+            "Bachelor's degree in Computer Science",
+            "3+ years of experience in software development",
+            "Experience with Java and Python"
+        ]
+    },
+    {
+        "id": "2",
+        "company": "Globex Corporation",
+        "position": "Marketing Manager",
+        "location": "New York, NY",
+        "salary": "100000",
+        "job_location": "Onsite",
+        "job_type": "Full Time",
+        "description": "Globex Corporation is looking for an experienced Marketing Manager to oversee our marketing initiatives. You will be responsible for developing and executing marketing campaigns, managing our social media presence, and analyzing market trends to inform our strategy.",
+        "responsibilities": "Develop and execute marketing campaigns to drive brand awareness and customer acquisition, Manage our social media presence and create engaging content, Analyze market trends and competition to inform our strategy",
+        "contact": {
+            "name": "Jane Doe",
+            "email": "jane.doe@globexcorp.com",
+            "phone": "555-987-6543"
+        },
+        "requirements": [
+            "Bachelor's degree in Marketing or related field",
+            "5+ years of experience in marketing",
+            "Strong communication and leadership skills"
+        ]
+    },
+    {
+        "id": "3",
+        "company": "Stark Industries",
+        "position": "Mechanical Engineer",
+        "location": "Los Angeles, CA",
+        "salary": "95000",
+        "job_location": "Remote",
+        "job_type": "Part Time",
+        "description": "Stark Industries is seeking an experienced Mechanical Engineer to join our team. The successful candidate will be responsible for designing and analyzing mechanical systems for our products, ensuring that they meet our high standards for quality and reliability.",
+        "responsibilities": "Design and analyze mechanical systems for our products using CAD software,Collaborate with cross-functional teams to develop new products and improve existing ones, Work with our manufacturing team to ensure smooth production",
+        "contact": {
+            "phone": "+1 (555) 555-5555",
+            "email": "info@starkindustries.com"
+        },
+        "requirements": [
+            "Bachelor's degree in Mechanical Engineering",
+            "3+ years of experience in mechanical design and analysis",
+            "Proficiency in CAD software"
+        ]
+    },
+    {
+        "id": "4",
+        "company": "Wayne Enterprises",
+        "position": "Financial Analyst",
+        "location": "Gotham City, NJ",
+        "salary": "90000",
+        "job_location": "Onsite",
+        "job_type": "Full Time",
+        "description": "Responsible for analyzing financial data and creating reports to support business decisions and provide financial forecasts.",
+        "responsibilities": "Analyze financial data to identify trends and patterns, Create financial reports and presentations to communicate findings to stakeholders, Collaborate with other departments to understand their financial needs",
+        "contact": {
+            "phone": "+1 (555) 555-5555",
+            "email": "info@wayneenterprises.com"
+        },
+        "requirements": [
+            "Bachelor's degree in Finance, Accounting or related field",
+            "2+ years of experience in financial analysis",
+            "Advanced Excel skills"
+        ]
+    },
+    {
+        "id": "5",
+        "company": "InGen Corporation",
+        "position": "Biomedical Research Scientist",
+        "location": "Orlando, FL",
+        "salary": "110000",
+        "job_location": "Remote",
+        "job_type": "Part Time",
+        "description": "Conduct research on genetic engineering and gene editing techniques to develop new biomedical products.",
+        "responsibilities": "Design and execute experiments to investigate the safety and efficacy of new biomedical products, Analyze experimental data and publish findings in peer-reviewed journals, Collaborate with other scientists and research teams to develop new research projects and products",
+        "contact": {
+            "phone": "+1 (555) 555-5555",
+            "email": "info@ingen.com",
+            "address": "123 Main Street, Orlando, FL 12345"
+        },
+        "requirements": [
+            "PhD in Biomedical Science or related field",
+            "Experience with genetic engineering and gene editing techniques",
+            "Strong publication record"
+        ]
+    },
+    {
+        "id": "6",
+        "company": "Umbrella Corporation",
+        "position": "Security Specialist",
+        "location": "Raccoon City, AR",
+        "salary": "80000",
+        "job_location": "Onsite",
+        "job_type": "Full Time",
+        "description": "Ensure the safety and security of Umbrella Corporation's facilities, personnel, and assets.",
+        "responsibilities": "Develop and implement security protocols to protect facilities, personnel, and assets, Monitor security systems and respond to any breaches or threats, Conduct investigations into security incidents and prepare reports",
+        "contact_info": {
+            "phone": "+1 (555) 555-5555",
+            "email": "info@umbrellacorp.com",
+            "address": "456 Main Street, Raccoon City, AR 67890"
+        },
+        "requirements": [
+            "Bachelor's degree in Criminal Justice or related field",
+            "5+ years of experience in security or law enforcement",
+            "Ability to handle high-pressure situations"
+        ]
+    }
+]
