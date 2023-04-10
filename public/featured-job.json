@@ -14,11 +14,8 @@
             "email": "john.smith@acmecorp.com",
             "phone": "555-123-4567"
         },
-        "requirements": [
-            "Bachelor's degree in Computer Science",
-            "3+ years of experience in software development",
-            "Experience with Java and Python"
-        ]
+        "education": "Bachelor's degree in Computer Science",
+        "experience": "3+ years of experience in software development"
     },
     {
         "id": "2",
@@ -35,11 +32,8 @@
             "email": "jane.doe@globexcorp.com",
             "phone": "555-987-6543"
         },
-        "requirements": [
-            "Bachelor's degree in Marketing or related field",
-            "5+ years of experience in marketing",
-            "Strong communication and leadership skills"
-        ]
+        "education": "Bachelor's degree in Marketing or related field",
+        "experience": "5+ years of experience in marketing"
     },
     {
         "id": "3",
@@ -55,11 +49,8 @@
             "phone": "+1 (555) 555-5555",
             "email": "info@starkindustries.com"
         },
-        "requirements": [
-            "Bachelor's degree in Mechanical Engineering",
-            "3+ years of experience in mechanical design and analysis",
-            "Proficiency in CAD software"
-        ]
+        "education": "Bachelor's degree in Mechanical Engineering",
+        "experience": "3+ years of experience in mechanical design and analysis"
     },
     {
         "id": "4",
@@ -75,11 +66,8 @@
             "phone": "+1 (555) 555-5555",
             "email": "info@wayneenterprises.com"
         },
-        "requirements": [
-            "Bachelor's degree in Finance, Accounting or related field",
-            "2+ years of experience in financial analysis",
-            "Advanced Excel skills"
-        ]
+        "education": "Bachelor's degree in Finance, Accounting or related field",
+        "experience":  "2+ years of experience in financial analysis"
     },
     {
         "id": "5",
@@ -96,11 +84,8 @@
             "email": "info@ingen.com",
             "address": "123 Main Street, Orlando, FL 12345"
         },
-        "requirements": [
-            "PhD in Biomedical Science or related field",
-            "Experience with genetic engineering and gene editing techniques",
-            "Strong publication record"
-        ]
+        "education": "PhD in Biomedical Science or related field",
+        "experience":  "Experience with genetic engineering and gene editing techniques"
     },
     {
         "id": "6",
@@ -117,10 +102,7 @@
             "email": "info@umbrellacorp.com",
             "address": "456 Main Street, Raccoon City, AR 67890"
         },
-        "requirements": [
-            "Bachelor's degree in Criminal Justice or related field",
-            "5+ years of experience in security or law enforcement",
-            "Ability to handle high-pressure situations"
-        ]
+        "education": "Bachelor's degree in Criminal Justice or related field",
+        "experience": "5+ years of experience in security or law enforcement"
     }
 ]

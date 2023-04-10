@@ -7,11 +7,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './Components/Home/Home';
+import Details from './Components/Details/Details';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    loader: () => fetch('featured-job.json'),
     children: [
       {
         path: "/",
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "applied-jobs",
         element: <h2>applied job</h2>
+      },
+      {
+        path: "job-details",
+        element: <Details></Details>
       },
       {
         path: "blogs",

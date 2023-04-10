@@ -1,10 +1,18 @@
-import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faCircleDollarToSlot, faDollar } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faDollar } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../../App';
+
 
 const FeaturedCard = ({ job }) => {
-    console.log(job)
+    const [cart, setCart] = useContext(CartContext);
+    const detailsHandler = () => {
+        setCart(job)
+        // console.log(job)
+    }
+    // console.log(job)
     const { position, company, job_location, job_type, location, salary } = job;
     return (
         <div className='col-md-6'>
@@ -15,9 +23,11 @@ const FeaturedCard = ({ job }) => {
                 <Button variant="outline-primary">{job_type}</Button>
                 <div className='d-flex gap-4 my-3'>
                     <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
-                    <p><FontAwesomeIcon icon={faDollar} />  {salary}</p>
+                    <p><FontAwesomeIcon icon={faDollar} /> Salary: {salary}</p>
                 </div>
-                <Button variant="primary">View Details</Button>
+                <Link to='/job-details'>
+                    <Button onClick={detailsHandler} variant="primary">View Details</Button>
+                </Link>
             </div>
         </div>
     );
