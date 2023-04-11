@@ -18,7 +18,7 @@ const Featured = () => {
     }
     // console.log(featured.length)
     return (
-        <div>
+        <div className='px-2'>
             <h2 className='text-center fw-bold fs-1 mb-3'>Featured Jobs</h2>
             <p className='text-center mb-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='row'>

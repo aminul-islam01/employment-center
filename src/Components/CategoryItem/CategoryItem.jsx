@@ -5,7 +5,7 @@ const CategoryItem = ({category}) => {
     // console.log(category)
     
     return (
-        <Card className='p-4 mx-3 rounded-2 category-item'>
+        <Card className='p-4 mx-3 rounded-2 gray'>
             <div className='bg-secondary bg-opacity-25 w-25 py-2 rounded-2'>
             <img src={category.logo} className='w-full mx-auto d-block' alt="" />
             </div>

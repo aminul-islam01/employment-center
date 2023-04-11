@@ -9,11 +9,14 @@ import {
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Statistics from './Components/Statistics/Statistics';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -22,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "statistics",
-        element: <h2>statistics page</h2>
+        element: <Statistics></Statistics>
       },
       {
         path: "applied-jobs",

@@ -13,12 +13,36 @@ a {
   color: #757575;
 }
 
-.category-item, details{
-  background-color: rgba(128, 128, 128, 0.089);
+.gray{
+  background-color: rgba(128, 128, 128, 0.074);
   border: none;
 }
 
 .logo {
   width: 25%;
   height: 100px;
+}
+
+.section {
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.066);
+}
+
+.error-emoji {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: 50px auto;
+  color: gold;
+}
+ 
+@media screen and (max-width: 576px) {
+  .banner-img {
+    width: 340px;
+  }
+
+  .banner-content {
+    padding-top: 50px;
+    text-align: center;
+  }
 }

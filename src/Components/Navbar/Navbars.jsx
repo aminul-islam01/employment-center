@@ -11,7 +11,7 @@ const Navbars = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Employment center</Navbar.Brand>
+                <Link to="/" className='fs-2 fw-bold'>Employment <span className='text-primary'>center</span></Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav

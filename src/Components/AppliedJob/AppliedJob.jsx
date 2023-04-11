@@ -16,8 +16,8 @@ const AppliedJob = () => {
     }, [filter])
 
     const handleFilter = (id) => {
-        const remote = filter.filter(job => job.job_location === id)
-        setFeatured(remote)
+        const filterJob = filter.filter(job => job.job_location === id)
+        setFeatured(filterJob)
     }
 
     useEffect(() => {
@@ -33,7 +33,8 @@ const AppliedJob = () => {
     }, [featured])
 
     return (
-        <div className='mt-5 pt-5'>
+        <div className='px-2'>
+            <h3 className='text-center mb-5 gray py-5'>Applied Job</h3>
             <DropdownButton id="dropdown-item" title="Filter by"
             className='text-end mb-2 bg-none' variant="secondary ">
                 <Dropdown.Item  as="button"onClick={() => handleFilter('Remote')}>Remote</Dropdown.Item>

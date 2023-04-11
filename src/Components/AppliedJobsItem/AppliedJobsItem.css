@@ -18,3 +18,13 @@
 .job-content {
     flex-grow: 1;
 }
+
+@media screen and (max-width: 576px) {
+    .job-item {
+        flex-direction: column;
+        padding-right: 30px;
+    }    
+    .job-item img {
+        margin: 0;
+    }
+}
