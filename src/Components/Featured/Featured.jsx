@@ -16,7 +16,7 @@ const Featured = () => {
     const handleShowAll = () => {
         setFeatured(dataAll)
     }
-    // console.log(featured)
+    // console.log(featured.length)
     return (
         <div>
             <h2 className='text-center fw-bold fs-1 mb-3'>Featured Jobs</h2>
@@ -30,7 +30,11 @@ const Featured = () => {
                 }
             </div>
             <div className='text-center mb-4'>
-            <Button onClick={handleShowAll} variant="primary">See All Jobs</Button>
+                {featured.length<5? 
+                <Button onClick={handleShowAll} variant="primary">See All Jobs</Button>
+                :""
+                }
+            
             </div>
         </div>
     );
