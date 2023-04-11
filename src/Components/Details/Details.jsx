@@ -1,17 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import React, { useContext } from 'react';
-import { CartContext, JobContext } from '../../App';
+import { CartContext } from '../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollar, faPhone, faLocationDot, faEnvelope, faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { getJobs } from '../../utilities/common';
+import { toast } from 'react-toastify';
 
 const Details = () => {
-    const featured = useContext(JobContext);
     const [cart, setCart] = useContext(CartContext)
     const { description, responsibilities, education, experience, salary, position, contact } = cart;
 
     // console.log(cart)
-    // console.log(featured)
 
 
     const handApplyJob = () => {
@@ -24,7 +23,7 @@ const Details = () => {
             localStorage.setItem('jobs', JSON.stringify(newArray));
         } 
         else {
-            // toast("This card already add to bookmark");
+            toast("Already apply this Job");
         }
         
     }

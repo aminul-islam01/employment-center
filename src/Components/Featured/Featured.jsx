@@ -1,17 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedCard from '../FeaturedCard/FeaturedCard';
 import Button from 'react-bootstrap/Button';
+import { JobContext } from '../../App';
 
 const Featured = () => {
     const [featured, setFeatured] = useState([]);
-    const data = useLoaderData();
+    const [data, setData] = useContext(JobContext)
+    const dataAll = useLoaderData();
     useEffect(()=> {
-        const dataLimit = data.slice(0,4);
+        const dataLimit = dataAll.slice(0,4);
         setFeatured(dataLimit)
+        setData(dataAll)
     }, [])
     const handleShowAll = () => {
-        setFeatured(data)
+        setFeatured(dataAll)
     }
     // console.log(featured)
     return (

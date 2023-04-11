@@ -12,7 +12,7 @@ const FeaturedCard = ({ job }) => {
         setCart(job)
         // console.log(job)
     }
-
+    
     const { position, company, job_location, job_type, location, salary, logo } = job;
     return (
         <div className='col-md-6'>

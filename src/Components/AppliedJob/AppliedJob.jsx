@@ -4,8 +4,13 @@ import { getJobs } from '../../utilities/common';
 import AppliedjobsItem from '../AppliedJobsItem/AppliedjobsItem';
 
 const AppliedJob = () => {
-    const featured = useContext(JobContext);
+    const [featured, setFeatured] = useContext(JobContext);
     const [jobs, setJobs] = useState([])
+
+    const handleFilter = () => {
+        const remote = featured.filter(job => job.job_location === "Remote")
+        setFeatured(remote)
+    }
 
     useEffect(() => {
         const storedJobs = getJobs()
@@ -17,11 +22,11 @@ const AppliedJob = () => {
             appliedJobs.push(...applied)
         }
         setJobs(appliedJobs)
-    }, [])
-    // console.log(jobs)
-
+    }, [featured])
+   
     return (
         <div className='mt-5 pt-5'>
+            <button onClick={handleFilter}>Remote</button>
             {jobs.map(job => <AppliedjobsItem
             job={job}
             key={job.id}>
