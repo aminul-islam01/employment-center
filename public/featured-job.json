@@ -2,6 +2,7 @@
     {
         "id": "1",
         "company": "Acme Corporation",
+        "logo": "https://i.ibb.co/k4d8Bqz/acme-logo.png",
         "position": "Software Engineer",
         "location": "San Francisco, CA",
         "salary": "120000",
@@ -10,9 +11,9 @@
         "description": "Acme Corporation is seeking an experienced Software Engineer to join our team. The successful candidate will work on developing and maintaining our core software systems, ensuring that they are scalable, robust and performant. You will collaborate with cross-functional teams to design ",
         "responsibilities": "Design, develop, and maintain software systems using Java and Python, Collaborate with cross-functional teams to design and implement new features, Perform code reviews and ensure code quality ",
         "contact": {
-            "name": "John Smith",
             "email": "john.smith@acmecorp.com",
-            "phone": "555-123-4567"
+            "phone": "555-123-4567",
+            "address": "734 Main Street, San Francisco, CA 12345"
         },
         "education": "Bachelor's degree in Computer Science",
         "experience": "3+ years of experience in software development"
@@ -20,6 +21,7 @@
     {
         "id": "2",
         "company": "Globex Corporation",
+        "logo": "https://i.ibb.co/7zdGL6t/globex.png",
         "position": "Marketing Manager",
         "location": "New York, NY",
         "salary": "100000",
@@ -28,9 +30,9 @@
         "description": "Globex Corporation is looking for an experienced Marketing Manager to oversee our marketing initiatives. You will be responsible for developing and executing marketing campaigns, managing our social media presence, and analyzing market trends to inform our strategy.",
         "responsibilities": "Develop and execute marketing campaigns to drive brand awareness and customer acquisition, Manage our social media presence and create engaging content, Analyze market trends and competition to inform our strategy",
         "contact": {
-            "name": "Jane Doe",
             "email": "jane.doe@globexcorp.com",
-            "phone": "555-987-6543"
+            "phone": "555-987-6543",
+            "address": "734 Main Street, New York, NY 12345"
         },
         "education": "Bachelor's degree in Marketing or related field",
         "experience": "5+ years of experience in marketing"
@@ -38,6 +40,7 @@
     {
         "id": "3",
         "company": "Stark Industries",
+        "logo": "https://i.ibb.co/7YhC3rf/stark.png",
         "position": "Mechanical Engineer",
         "location": "Los Angeles, CA",
         "salary": "95000",
@@ -47,7 +50,8 @@
         "responsibilities": "Design and analyze mechanical systems for our products using CAD software,Collaborate with cross-functional teams to develop new products and improve existing ones, Work with our manufacturing team to ensure smooth production",
         "contact": {
             "phone": "+1 (555) 555-5555",
-            "email": "info@starkindustries.com"
+            "email": "info@starkindustries.com",
+            "address": "432 Main Street, Los Angeles, CA 12345"
         },
         "education": "Bachelor's degree in Mechanical Engineering",
         "experience": "3+ years of experience in mechanical design and analysis"
@@ -55,6 +59,7 @@
     {
         "id": "4",
         "company": "Wayne Enterprises",
+        "logo": "https://i.ibb.co/ys3qgWr/wayne.png",
         "position": "Financial Analyst",
         "location": "Gotham City, NJ",
         "salary": "90000",
@@ -64,7 +69,8 @@
         "responsibilities": "Analyze financial data to identify trends and patterns, Create financial reports and presentations to communicate findings to stakeholders, Collaborate with other departments to understand their financial needs",
         "contact": {
             "phone": "+1 (555) 555-5555",
-            "email": "info@wayneenterprises.com"
+            "email": "info@wayneenterprises.com",
+            "address": "423 Main Street, Gotham City, Nj 12345"
         },
         "education": "Bachelor's degree in Finance, Accounting or related field",
         "experience":  "2+ years of experience in financial analysis"
@@ -72,6 +78,7 @@
     {
         "id": "5",
         "company": "InGen Corporation",
+        "logo": "https://i.ibb.co/ys3qgWr/wayne.png",
         "position": "Biomedical Research Scientist",
         "location": "Orlando, FL",
         "salary": "110000",
@@ -90,6 +97,7 @@
     {
         "id": "6",
         "company": "Umbrella Corporation",
+        "logo": "https://i.ibb.co/LxrZQb9/umbrella.png",
         "position": "Security Specialist",
         "location": "Raccoon City, AR",
         "salary": "80000",

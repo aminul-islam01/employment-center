@@ -13,10 +13,11 @@ const FeaturedCard = ({ job }) => {
         // console.log(job)
     }
     // console.log(job)
-    const { position, company, job_location, job_type, location, salary } = job;
+    const { position, company, job_location, job_type, location, salary, logo } = job;
     return (
         <div className='col-md-6'>
             <div className='border mb-4 rounded-2 p-3'>
+                <img src={logo} className='logo' alt="" />
                 <h2>{position}</h2>
                 <p>{company}</p>
                 <Button variant="outline-primary me-3">{job_location}</Button>
