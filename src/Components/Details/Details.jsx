@@ -3,13 +3,32 @@ import React, { useContext } from 'react';
 import { CartContext, JobContext } from '../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollar, faPhone, faLocationDot, faEnvelope, faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { getJobs } from '../../utilities/common';
 
 const Details = () => {
     const featured = useContext(JobContext);
     const [cart, setCart] = useContext(CartContext)
-    const { description, responsibilities, education, experience, salary, position, contact, address } = cart;
-    console.log(cart)
-    console.log(featured)
+    const { description, responsibilities, education, experience, salary, position, contact } = cart;
+
+    // console.log(cart)
+    // console.log(featured)
+
+
+    const handApplyJob = () => {
+        const storeJobs = getJobs();
+        
+        const exists = storeJobs.find(Id => Id === cart.id);
+        if (!exists) {
+            let newArray = [cart.id, ...storeJobs];
+            // set data to localStorage
+            localStorage.setItem('jobs', JSON.stringify(newArray));
+        } 
+        else {
+            // toast("This card already add to bookmark");
+        }
+        
+    }
+
     return (
         <div className='row mt-5'>
             <div className='col-md-8'>
@@ -45,7 +64,7 @@ const Details = () => {
                         <strong> Address:</strong> {contact?.address}
                     </p>
                 </div>
-                <Button variant="primary mt-3 w-100">Apply Now</Button>
+                <Button onClick={handApplyJob} variant="primary mt-3 w-100">Apply Now</Button>
             </div>
         </div>
     );

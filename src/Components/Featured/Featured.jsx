@@ -13,7 +13,7 @@ const Featured = () => {
     const handleShowAll = () => {
         setFeatured(data)
     }
-    console.log(featured)
+    // console.log(featured)
     return (
         <div>
             <h2 className='text-center fw-bold fs-1 mb-3'>Featured Jobs</h2>

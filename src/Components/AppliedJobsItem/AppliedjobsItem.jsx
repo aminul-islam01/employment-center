@@ -1,23 +1,23 @@
+import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faDollar } from '@fortawesome/free-solid-svg-icons'
+import './AppliedJobsItem.css'
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
 import { CartContext } from '../../App';
 
+const AppliedjobsItem = ({job}) => {
+    const { position, company, job_location, job_type, location, salary, logo } = job;
 
-const FeaturedCard = ({ job }) => {
     const [cart, setCart] = useContext(CartContext);
     const detailsHandler = () => {
         setCart(job)
-        // console.log(job)
     }
-
-    const { position, company, job_location, job_type, location, salary, logo } = job;
+    
     return (
-        <div className='col-md-6'>
-            <div className='border mb-4 rounded-2 p-3'>
-                <img src={logo} className='logo' alt="" />
+        <div className='job-item'>
+            <img src={logo} alt="" />
+            <div className='job-content'>
                 <h2>{position}</h2>
                 <p>{company}</p>
                 <Button variant="outline-primary me-3">{job_location}</Button>
@@ -26,12 +26,12 @@ const FeaturedCard = ({ job }) => {
                     <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
                     <p><FontAwesomeIcon icon={faDollar} /> Salary: {salary}</p>
                 </div>
-                <Link to='/job-details'>
-                    <Button onClick={detailsHandler} variant="primary">View Details</Button>
-                </Link>
             </div>
+            <Link to='/job-details'>
+                    <Button onClick={detailsHandler} variant="primary">View Details</Button>
+            </Link>
         </div>
     );
 };
 
-export default FeaturedCard;
+export default AppliedjobsItem;
