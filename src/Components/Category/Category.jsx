@@ -5,7 +5,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 const Category = () => {
     const [categories, setCategories] = useState([]);
     useEffect( ()=> {
-        fetch('./public/Catagory.json')
+        fetch('/Catagory.json')
         .then(res=> res.json())
         .then(data=> setCategories(data))
     }, [])
