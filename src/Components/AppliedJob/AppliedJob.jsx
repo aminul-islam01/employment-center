@@ -31,15 +31,18 @@ const AppliedJob = () => {
         }
         setJobs(appliedJobs)
     }, [featured])
-
+    console.log(jobs.length)
     return (
         <>
             <h3 className='text-center mb-5 gray py-5'>Applied Job</h3>
+            {jobs.length===0? <h2 className='text-center text-warning mb-5'>You are not applied any job</h2>
+            : 
             <DropdownButton id="dropdown-item" title="Filter by"
                 className='text-end mb-2 bg-none' variant="secondary ">
                 <Dropdown.Item as="button" onClick={() => handleFilter('Remote')}>Remote</Dropdown.Item>
                 <Dropdown.Item as="button" onClick={() => handleFilter('Onsite')}>Onsite</Dropdown.Item>
             </DropdownButton>
+            }
             <div className='px-2'>
                 {jobs.map(job => <AppliedjobsItem
                     job={job}

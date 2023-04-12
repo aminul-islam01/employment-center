@@ -37,7 +37,7 @@ const Statistics = () => {
         },
     ]
     return (
-        <div>
+        <div className='mb-5'>
             <h3 className='text-2xl text-center py-5 gray mb-5'>Assignment marks Chart</h3>
             <ResponsiveContainer width="100%" height={300}>
                 <AreaChart

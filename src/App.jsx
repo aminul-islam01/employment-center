@@ -28,7 +28,7 @@ function App() {
           <div>
             <Outlet></Outlet>
           </div>
-          {/* <Footer></Footer> */}
+          <Footer></Footer>
         </CartContext.Provider>
       </JobContext.Provider>
     </div>
