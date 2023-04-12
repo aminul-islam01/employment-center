@@ -20,8 +20,8 @@ const FeaturedCard = ({ job }) => {
                 <img src={logo} className='logo' alt="" />
                 <h2>{position}</h2>
                 <p>{company}</p>
-                <Button variant="outline-primary me-3">{job_location}</Button>
-                <Button variant="outline-primary">{job_type}</Button>
+                <span className='border border-primary rounded-1 p-1 text-primary me-3'>{job_location}</span>
+                <span className='border border-primary rounded-1 p-1 text-primary'>{job_type}</span>
                 <div className='d-flex gap-4 my-3'>
                     <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
                     <p><FontAwesomeIcon icon={faDollar} /> Salary: {salary}</p>

@@ -7,6 +7,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 
 const AppliedJob = () => {
+    const [storeArray, setStoredArray] = useState([])
     const [filter, setFilter] = useState([]);
     const [featured, setFeatured] = useContext(JobContext);
     const [jobs, setJobs] = useState([])
@@ -30,12 +31,13 @@ const AppliedJob = () => {
             appliedJobs.push(...applied)
         }
         setJobs(appliedJobs)
+        setStoredArray(storedJobs)
     }, [featured])
-    console.log(jobs.length)
+    // console.log(jobs.length)
     return (
         <>
             <h3 className='text-center mb-5 gray py-5'>Applied Job</h3>
-            {jobs.length===0? <h2 className='text-center text-warning mb-5'>You are not applied any job</h2>
+            {storeArray.length===0? <h2 className='text-center text-warning mb-5'>You are not applied any job</h2>
             : 
             <DropdownButton id="dropdown-item" title="Filter by"
                 className='text-end mb-2 bg-none' variant="secondary ">
