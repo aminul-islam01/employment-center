@@ -12,7 +12,7 @@ const Footer = () => {
                         <h4 className='pt-4'>Employment Center</h4>
                         <p className='text-secondary'>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                         <a className='' href="">
-                            <img src="/public/Group 9969.png" alt="" />
+                            <img src="/Group 9969.png" alt="" />
                         </a>
                     </Col>
                     <Col xs={6} sm={6} md={2}>
