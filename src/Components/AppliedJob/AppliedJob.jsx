@@ -11,7 +11,7 @@ const AppliedJob = () => {
     const [featured, setFeatured] = useContext(JobContext);
     const [jobs, setJobs] = useState([])
 
-    useEffect(()=> {
+    useEffect(() => {
         setFilter(featured);
     }, [filter])
 
@@ -33,18 +33,20 @@ const AppliedJob = () => {
     }, [featured])
 
     return (
-        <div className='px-2'>
+        <>
             <h3 className='text-center mb-5 gray py-5'>Applied Job</h3>
             <DropdownButton id="dropdown-item" title="Filter by"
-            className='text-end mb-2 bg-none' variant="secondary ">
-                <Dropdown.Item  as="button"onClick={() => handleFilter('Remote')}>Remote</Dropdown.Item>
-                <Dropdown.Item  as="button"onClick={() => handleFilter('Onsite')}>Onsite</Dropdown.Item>
+                className='text-end mb-2 bg-none' variant="secondary ">
+                <Dropdown.Item as="button" onClick={() => handleFilter('Remote')}>Remote</Dropdown.Item>
+                <Dropdown.Item as="button" onClick={() => handleFilter('Onsite')}>Onsite</Dropdown.Item>
             </DropdownButton>
-            {jobs.map(job => <AppliedjobsItem
-                job={job}
-                key={job.id}>
-            </AppliedjobsItem>)}
-        </div>
+            <div className='px-2'>
+                {jobs.map(job => <AppliedjobsItem
+                    job={job}
+                    key={job.id}>
+                </AppliedjobsItem>)}
+            </div>
+        </>
     );
 };
 

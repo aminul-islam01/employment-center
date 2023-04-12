@@ -31,7 +31,7 @@ const Details = () => {
     return (
         <>
         <h3 className='py-5 text-center gray'>Job Details</h3>
-            <div className='row mt-5 px-2'>
+            <div className='row mt-5 px-2 mb-5'>
                 <div className='col-md-8'>
                     <p><strong>Job Description:</strong> {description}</p>
                     <p><strong>Job Responsibilities:</strong> {responsibilities}</p>

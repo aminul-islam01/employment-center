@@ -11,6 +11,7 @@ import Details from './Components/Details/Details';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Statistics from './Components/Statistics/Statistics';
+import Blogs from './Components/Blogs/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "blogs",
-        element: <h2>blog section</h2>
+        element: <Blogs></Blogs>
       }
     ]
   },
